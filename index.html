@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pixel Event Testing Site</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; padding: 40px; }
-    button {
-      display: block; margin: 12px auto; padding: 12px 20px;
-      font-size: 16px; background-color: #4267B2; color: white; border: none; border-radius: 6px;
-      cursor: pointer;
-    }
-    a { display: block; margin-top: 20px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxe Scents: Discover timeless perfumes with elegant scents.">
+    <title>Luxe Scents - Home</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>Test Navigation for Pixel Events</h1>
-
-  <button onclick="location.href='lead.html'">Lead</button>
-  <button onclick="location.href='add-to-cart.html'">Add To Cart</button>
-  <button onclick="location.href='checkout.html'">Initiate Checkout</button>
-  <button onclick="location.href='purchase.html'">Purchase</button>
-  <button onclick="location.href='thankyou.html'">Thank You</button>
-  <a href="privacy.html">Privacy Policy</a>
+    <header>
+        <div class="logo">PERFUME HOUSE</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Discover Timeless Scents</h1>
+        <p>Indulge in luxury with our premium perfume collections.</p>
+        <button class="btn" onclick="window.location.href='collections.html'">Shop Collections</button>
+    </section>
+    <section class="container">
+        <h2>Featured Highlights</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="./royal_looking_perfume_house_perfume_brand_cover (4).jpeg" alt="Featured Perfume 1">
+                <div class="card-content">
+                    <h3>Rose Gold Eau de Parfum</h3>
+                    <p>Notes: Rose, Vanilla, Musk | $120</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./3.jpeg" alt="Featured Perfume 2">
+                <div class="card-content">
+                    <h3>Ocean Breeze</h3>
+                    <p>Notes: Sea Salt, Citrus, Amber | $110</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Luxe Scents</p>
+        <div class="social-icons">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>Email: info@luxescents.com | Phone: (123) 456-7890</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
+
